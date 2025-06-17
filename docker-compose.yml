@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    container_name: python2_app
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./:/app
+    command: tail -f /dev/null
